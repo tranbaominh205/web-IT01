@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Tin Tuyển Sinh | Trường THPT Mở TPHCM</title>
+    <link rel="stylesheet" href="/minh/css/style.css">
+    <link rel="stylesheet" href="/minh/css/mobile.css" media =" screen and (max-width: 500px)">
+    <link rel="icon" href="/minh/images/logoohc.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        wow = new WOW(
+                 {
+                 boxClass:     'wow',      // default
+                 animateClass: 'animate__animated', // default
+                 offset:       0,          // default
+                 mobile:       true,       // default
+                 live:         true        // default
+               }
+               )
+               wow.init();
+   </script>
+</head>
+<body>
+    <header>
+        <div class="header-phu">
+            <ul class="menu-header-phu">
+                <a href="#" style="cursor: not-allowed;"><li>Đăng nhập</a></li>
+                <a href="/minh/html/lien-he.html"><li>Liên hệ</a></li>
+                <li id="search-input-container"><input type="text" placeholder="Tìm kiếm" id="search-input"></li>
+                <li><i style="cursor: not-allowed;" class="fa-solid fa-magnifying-glass" id="search-icon"></i></li> 
+            </ul>
+        </div>
+        <div class="header-chinh">
+            <ul class="header-chinh-trai">
+                <li>
+                    <a href="#">
+                        <img src="/minh/images/logoohc.png" alt="logo">
+                    </a>
+                </li>
+                <li class="title-truong">
+                    <h3>TRUNG HỌC PHỔ THÔNG</h3>
+                    <h2>MỞ THÀNH PHỐ HỒ CHÍ MINH</h2>
+                </li>
+            </ul>
+            <div id="hamburger-menu">
+                <span>&#9776;</span>
+            </div>
+            <ul class="header-chinh-phai">
+                <li><a href="/Thành/index.html">Trang chủ</a></li>
+                <a href="#"><li class="menu-chinh">Giới thiệu</a>
+                    <ul class="menu-con">
+                        <a href="/minh/html/gioi-thieu.html"><li>Giới thiệu chung</li></a>
+                        <a href="/Thành/lich-su-phat-trien.html"><li>Lịch sử phát triển</li></a>
+                        <a href="bangiamhieu.html"><li>Ban giám hiệu</li></a>
+                    </ul>
+                </li>
+                <a href="/minh/html/thong-tin-tuyen-sinh.html"><li class="menu-chinh">Tuyển sinh</a>
+                    <ul class="menu-con">
+                        <a href="/minh/html/thong-tin-tuyen-sinh.html#mocThoiGian"><li>Mốc thời gian</li></a>
+                        <a href="/minh/html/thong-tin-tuyen-sinh.html#hocPhi"><li>Học phí, học bổng, hổ trợ</li></a>
+                        <a href="/minh/html/thong-tin-tuyen-sinh.html#thongTin"><li>Nhận thông tin</li></a>
+                        <a href="/minh/html/thong-tin-tuyen-sinh.html#doiNgu"><li>Đội ngũ tuyển sinh</li></a>
+                    </ul>
+                </li>
+                <a href="/minh/html/hoat-dong-ngoai-khoa.html"><li class="menu-chinh">Hoạt động</a>
+                    <ul class="menu-con">
+                        <a href="/minh/html/hoat-dong-ngoai-khoa.html#lich"><li>Lịch hoạt động</li></a>
+                        <a href="/minh/html/hoat-dong-ngoai-khoa.html#hoatDong"><li>Câu lạc bộ, đội nhóm</li></a>
+                        <a href="/minh/html/hoat-dong-ngoai-khoa.html#hoatDong"><li>Thể thao, văn nghệ</li></a>
+                        <a href="/minh/html/hoat-dong-ngoai-khoa.html#hoatDong"><li>chương trình tình nguyện</li></a>
+
+                    </ul>
+                </li>
+                <a href="/minh/html/goc-phu-huynh.html"><li class="menu-chinh">Phụ huynh</a></li>
+            </ul>
+        </div>
+    </header>  
+    <div class="pageBodyWrapper">
+        <div class="pageBody">
+            <main class="pageContent">
+                <h1>
+                    Thông tin tuyển sinh
+                </h1>
+                
+                <section class="element">
+                    <div class="introHeader  animate__tada animate__animated animate__bounce wow" >
+                        <span class="header contentElement">
+                            Thông tin tuyển sinh của Trường THPT Mở TP HCM
+                        </span>
+                    </div>
+                </section>
+
+                <section class="element">
+                    <div class="boxRed animate__flipInY animate__animated animate__bounce wow">
+                        <div class="boxContent">
+                            <span class="boxTitle">
+                                    CAM KẾT
+                            </span>
+                            <p  class="boxText">
+                                Trường THPT Mở TP HCM cam kết phát triển thế hệ trẻ với những giá trị trách nhiệm, lãnh đạo 
+                                trong từng hành động. Các thầy cô của chúng tôi tận tâm phát triển học sinh về mặt tinh thần, học thuật, sáng tạo, xã hội và thể thao.                            </p>
+                        </div>  
+                    </div>
+                </section> 
+
+                <section>
+                    <img class="animate__fadeIn animate__animated animate__bounce wow" src="/minh/images/addmissionImage.jpg" alt="addmissionImage">
+                </section>
+                
+
+                <section class="element" id="mocThoiGian">
+                        <div class="tableContainer ">
+                            <h3 class="animate__fadeInDownBig animate__animated animate__bounce wow">CÁC MỐC THỜI GIAN TUYỂN SINH</h3>
+                            <table>
+                                <tr>
+                                    <td class="animate__fadeInRightBig animate__animated animate__bounce wow">Bắt đầu nhận hồ sơ</td>
+                                    <td class="animate__fadeInLeftBig animate__animated animate__bounce wow">Ngày 01, Tháng 09, Năm 2023, từ 7:30 - 16:50</td>
+                                </tr>
+                                <tr>
+                                    <td class="animate__fadeInRightBig animate__animated animate__bounce wow">Kết thúc nhận hồ sơ</td>
+                                    <td class="animate__fadeInLeftBig animate__animated animate__bounce wow">Ngày 03, Tháng 09, Năm 2023</td>
+                                </tr>
+                                <tr>
+                                    <td class="animate__fadeInRightBig animate__animated animate__bounce wow">Công bố điểm chuẩn</td>
+                                    <td class="animate__fadeInLeftBig animate__animated animate__bounce wow">Ngày 05, Tháng 09, Năm 2023</td>
+                                </tr>
+                                <tr>
+                                    <td class="animate__animated animate__bounce wow animate__fadeInRightBig">Ngày hội phụ huynh</td>
+                                    <td class="animate__fadeInLeftBig animate__animated animate__bounce wow">7:30 Ngày 01, Tháng 09, Năm 2023</td>
+                                </tr>
+                            </table>
+                    </div>   
+                </section>
+                
+                <section class="element" id="hocPhi">
+                    <div id="tabs">
+                        <div class="tab active animate__flip animate__animated animate__bounce wow" onclick="showContent(0)">HỌC PHÍ</div>
+                        <div class="tab animate__animated animate__bounce wow animate__flip" onclick="showContent(1)">HỌC BỔNG</div>
+                        <div class="tab animate__animated animate__bounce wow animate__flip" onclick="showContent(2)">HỖ TRỢ</div>
+                    </div>
+                
+                    <div id="content">
+                        <div class="content active ">
+                            <h3>Học phí và các khoản phí</h3>
+                            <ul>
+                                <li><strong>Học phí hàng năm:</strong> 25,000,000 VND
+                                    <p>Học phí bao gồm toàn bộ chi phí cho các môn học chính khóa, ngoại ngữ, và các hoạt động giáo dục bổ trợ. Đảm bảo chất lượng giáo dục cao nhất.</p>
+                                </li>
+                                <li><strong>Phí cơ sở vật chất:</strong> 5,000,000 VND
+                                    <p>Khoản phí này sử dụng cho việc duy trì và nâng cấp các cơ sở vật chất như phòng học, thư viện, sân thể thao, và trang thiết bị học tập khác.</p>
+                                </li>
+                                <li><strong>Phí hoạt động ngoại khóa:</strong> 3,000,000 VND
+                                    <p>Bao gồm chi phí tổ chức các hoạt động ngoại khóa như dã ngoại, thể thao, văn nghệ, và các câu lạc bộ học sinh.</p>
+                                </li>
+                                <li><strong>Phí đồng phục:</strong> 1,500,000 VND
+                                    <p>Học sinh sẽ được cung cấp 2 bộ đồng phục chính thức và 1 bộ đồng phục thể thao. Đồng phục tạo sự đồng bộ và trang nghiêm trong môi trường học đường.</p>
+                                </li>
+                                <li><strong>Phí tài liệu học tập:</strong> 2,000,000 VND
+                                    <p>Gồm sách giáo khoa, vở bài tập, tài liệu tham khảo và dụng cụ học tập cơ bản.</p>
+                                </li>
+                            </ul>
+                            <h3>Chính sách thanh toán</h3>
+                            <p>Học phí có thể thanh toán theo kỳ hoặc cả năm. Giảm 5% khi thanh toán toàn bộ học phí trong 15 ngày đầu tiên của năm học. Chính sách hoàn trả áp dụng khi học sinh nghỉ học vì lý do sức khỏe hoặc gia đình chuyển nơi ở.</p>
+                        </div>
+                        <div class="content">
+                            <h3>Học bổng</h3>
+                            <ul>
+                                <li><strong>Học bổng xuất sắc học tập:</strong>
+                                    <p>Giảm 50% học phí cho học sinh có điểm trung bình trên 9.0 và không có môn nào dưới 8.5.</p>
+                                </li>
+                                <li><strong>Học bổng lãnh đạo trẻ:</strong>
+                                    <p>Giảm 40% học phí cho học sinh có đóng góp tích cực trong các hoạt động ngoại khóa với điểm học tập không dưới 8.0.</p>
+                                </li>
+                                <li><strong>Học bổng thể thao:</strong>
+                                    <p>Giảm 30% học phí cho học sinh có thành tích cao trong các cuộc thi thể thao cấp thành phố, cấp tỉnh, hoặc cấp quốc gia.</p>
+                                </li>
+                                <li><strong>Học bổng nghệ thuật:</strong>
+                                    <p>Giảm 20% học phí cho học sinh có thành tích xuất sắc trong các lĩnh vực nghệ thuật.</p>
+                                </li>
+                                <li><strong>Học bổng hỗ trợ tài chính:</strong>
+                                    <p>Hỗ trợ từ 10% đến 100% học phí cho học sinh từ gia đình có hoàn cảnh khó khăn.</p>
+                                </li>
+                            </ul>
+                            <h3>Quy trình xin học bổng</h3>
+                            <p>Học sinh nộp đơn xin học bổng kèm chứng chỉ, giấy chứng nhận về thành tích hoặc hoàn cảnh tài chính. Kết quả sẽ được thông báo trước khi bắt đầu năm học mới.</p>
+                        </div>
+                        <div class="content">
+                            <h3>Hỗ trợ dựa trên nhu cầu</h3>
+                            <ul>
+                                <li><strong>Chương trình hỗ trợ chi phí học tập:</strong>
+                                    <p>Hỗ trợ tài chính cho học sinh có hoàn cảnh khó khăn, miễn giảm từ 20% đến 100% học phí.</p>
+                                </li>
+                                <li><strong>Trợ cấp sách giáo khoa và dụng cụ học tập:</strong>
+                                    <p>Nhà trường cung cấp sách giáo khoa và dụng cụ học tập miễn phí cho học sinh có hoàn cảnh khó khăn.</p>
+                                </li>
+                                <li><strong>Chương trình trợ cấp ăn trưa:</strong>
+                                    <p>Hỗ trợ suất ăn trưa miễn phí hoặc giảm giá tại căn tin cho học sinh khó khăn.</p>
+                                </li>
+                                <li><strong>Hỗ trợ phương tiện đi lại:</strong>
+                                    <p>Cung cấp các gói hỗ trợ chi phí xe buýt, xe đưa đón hoặc trợ cấp đi lại hàng tháng.</p>
+                                </li>
+                                <li><strong>Dịch vụ tư vấn và hỗ trợ tâm lý:</strong>
+                                    <p>Nhà trường cung cấp dịch vụ tư vấn tâm lý miễn phí cho học sinh gặp khó khăn.</p>
+                                </li>
+                            </ul>
+                            <h3>Cách thức đăng ký</h3>
+                            <p>Học sinh hoặc phụ huynh liên hệ phòng hỗ trợ học sinh để nhận thông tin chi tiết và nộp đơn xin hỗ trợ.</p>
+                         </div>
+                </section>
+
+                <section class="element" id="thongTin">
+                    <form class="contactForm animate__flipInY animate__animated animate__bounce wow" id="contactForm">
+                        <h2>ĐĂNG KÍ NHẬN THÔNG TIN TUYỂN SINH SỚM NHẤT TỪ TRƯỜNG</h2>
+                        <p><span class="highlight">*</span><i>Bắt buộc nhập</i></p>
+                        <div class="formElement fullNameElement">
+                            <label for="parentName">HỌ VÀ TÊN <span class="highlight">*</span></label>
+                            <div class="fullName">
+                                <input type="text" id="firstName" placeholder="Họ và tên đệm" name="firstName" required>
+                                <input type="text" id="lastName" placeholder="Tên" name="lastName" required>
+                            </div>
+                        </div>
+                
+                        <div class="formElement">
+                            <label for="parentEmail">EMAIL<span class="highlight">*</span></label>
+                            <input type="email" id="parentEmail" name="parentEmail" placeholder="Nhập email" required>
+                        </div>
+                    
+                        <div class="formElement">
+                            <label for="parentPhoneNumber">SỐ ĐIỆN THOẠI</label>
+                            <input type="tel" id="parentPhoneNumber" name="parentPhoneNumber" placeholder="Nhập số điện thoại">
+                        </div>
+                    
+                        <button type="submit" class="submit-btn">Nhận</button>
+                    </form>
+                </section>
+
+                <section class="element" id="doiNgu">
+                    <h2>GẶP GỠ ĐỘI NGŨ TUYỂN SINH CỦA CHÚNG TÔI</h2>
+                    <div class="twoColumnLayout borderBot">
+                        <span class="column-1-25 animate__fadeInUpBig animate__animated animate__bounce wow">
+                            <img width="100%" src="/minh/images/gv1.jpg" alt="Phục vụ cộng đồng image">
+                        </span>
+                        <span class="column-2-75 contentElement animate__fadeInDownBig animate__animated animate__bounce wow">
+                            <h2>Cô giáo Hà Ánh Phương</h2>
+                            <p><strong>Vị trí:</strong> Trưởng ban Tuyển sinh</p>
+                            <p><strong>Số năm kinh nghiệm:</strong> 10 năm</p>
+                            <p><strong>Trình độ chuyên môn:</strong> Thạc sĩ Quản lý Giáo dục</p>
+                            <p><strong>Nhiệm vụ chính:</strong></p>
+                            <ul>
+                                <li>Quản lý và điều phối công tác tuyển sinh của trường.</li>
+                                <li>Hướng dẫn và tư vấn phụ huynh và học sinh về các thông tin tuyển sinh, chương trình học.</li>
+                                <li>Tổ chức các buổi hội thảo, tư vấn tuyển sinh.</li>
+                            </ul>
+                            <p><strong>Số điện thoại:</strong> 0123 456 789</p>
+                             <p><strong>Email:</strong> <a href="mailto:phuongha@ohc.edu.vn">phuongha@ohc.edu.vn</a></p>
+                        </span>
+                    </div>
+                    <div class="twoColumnLayout borderBot">
+                        <span class="column-1-25 animate__fadeInUpBig animate__animated animate__bounce wow">
+                            <img width="100%" src="/minh/images/gv2.jpg" alt="Phục vụ cộng đồng image">
+                        </span>
+                        <span class="column-2-75 contentElement animate__fadeInDownBig animate__animated animate__bounce wow">
+                            <h2>Cô giáo Trần Thị Mai</h2>
+                            <p><strong>Vị trí:</strong> Phó ban Tuyển sinh</p>
+                            <p><strong>Số năm kinh nghiệm:</strong> 7 năm</p>
+                            <p><strong>Trình độ chuyên môn:</strong> Thạc sĩ Tâm lý học giáo dục</p>
+                            <p><strong>Nhiệm vụ chính:</strong></p>
+                            <ul>
+                                <li>Phụ trách việc liên hệ và tiếp cận học sinh từ các trường THCS.</li>
+                                <li>Hỗ trợ học sinh và phụ huynh trong việc đăng ký tuyển sinh trực tuyến.</li>
+                                <li>Giải đáp các thắc mắc về quy trình tuyển sinh, điều kiện nhập học.</li>
+                            </ul>
+                            <p><strong>Số điện thoại:</strong> 0987 654 321</p>
+                            <p><strong>Email:</strong> <a href="mailto:maitt@ohc.edu.vn">maitt@truongthpt.edu.vn</a></p>
+                        </span>
+                    </div>
+                </section>
+
+                <section>
+                    <img src="/minh/images/botchat.png" alt="Chat Icon" id="openChatBTN" class="chatIcon">
+
+                    <!-- Chatbox dưới dạng overlay -->
+                    <div class="chatOverlay" id="chatOverlay">
+                        <div class="chatContainer">
+                            <div class="chatHeader">
+                                <span>Trò chuyện với BotChat</span>
+                                <button class="closeBTN" id="closeChatBTN"><i class="fas fa-times"></i></button>
+                            </div>
+                            <div class="chatBox" id="chatBox"></div>
+                            <div class="chatInputContainer">
+                                <input type="text" id="userInput" placeholder="Nhập tin nhắn ở đây...">
+                                <button class="sendBTN" onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+                            </div>
+                            <div class="suggestions" id="suggestions">
+                                <!-- Dòng gợi ý sẽ được tạo động ở đây -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <button id="goToTopBtn" class="go-to-top">TOP</button>
+
+
+                
+            </main>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="noidung-footer">
+            <p><strong>Trường Trung Học Phổ Thông Mở Thành Phố Hồ Chí Minh</strong></p>
+            <p>Địa chỉ: Khu dân cư Nhơn Đức, Nhà Bè, Hồ Chí Minh</p>
+            <p>Điện thoại: (028) 1234 1234</p>
+            <p>Email: ohc@gmail.com</p>
+            <a href="#">Điều khoản sử dụng</a> | <a href="#">Chính sách bảo mật</a>
+        </div>
+        <div class="lichtrinh">
+            <p><strong>Lịch trình:</strong></p>
+            <p>7:00 sáng: Lớp học bắt đầu</p>
+            <p>11:30 sáng: kết thúc ca sáng</p>
+            <p>1:30 chiều: Lớp học bắt đầu</p>
+            <p>4:30 chiều: kết thúc ca chiều</p>
+        </div>
+        <div class="lienket">
+            <h4 class="tieu-de">Liên kết mạng xã hội:</h4>
+            <div class="lienket-mxh">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/800px-Facebook_Logo_%282019%29.png" alt="Facebook">
+                </a>
+                <a href="https://www.youtube.com" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt="YouTube">
+                </a>
+                <a href="https://www.tiktok.com" target="_blank">
+                    <img src="https://static.vecteezy.com/system/resources/previews/016/716/450/non_2x/tiktok-icon-free-png.png" alt="TikTok">
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+        
+<script src="/minh/js/ttts.js"></script>
+<script src="/minh/js/btn.js"></script>
+<script src="/minh/js/bot.js"></script>
+<script src="/minh/js/menu.js"></script>
+
+
+
+</body>
+</html>

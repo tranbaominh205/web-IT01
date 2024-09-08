@@ -1,0 +1,240 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:larger;
+}
+
+#hamburger-menu {
+    display: none; 
+    font-size: 30px; 
+    cursor: pointer;
+    align-self: start;
+    margin-top: 20px;
+    color: #2d64bc;
+}
+
+
+
+/* HEADER PHỤ */
+
+.header-phu{
+    background-color:#16477f;
+    height: 38px;
+}
+.header-phu a {
+    color: black; 
+    text-decoration: none;
+}
+
+.header-phu a:visited {
+    color: black !important; 
+}
+.menu-header-phu{
+    display: flex;               
+    justify-content: flex-end;   
+    margin: 0;          
+}
+.menu-header-phu li{
+    list-style-type: none;
+    padding: 4px 12px;   
+}
+.menu-header-phu li:not(:last-child)::after {
+    content: "|";
+    color: black;
+    padding-left: 12px;  
+}
+#search-input-container {
+    display: none;       
+}
+.menu-header-phu li {
+    cursor: pointer; 
+}
+
+/* HEADER CHÍNH */
+
+.header-chinh{
+    background-color:white;
+    display: flex;
+    align-items: center;
+}
+.header-chinh-trai{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+.header-chinh-trai img{
+   width: 150px;
+   height: auto;
+}
+.header-chinh-trai img{
+    height: 100px;
+    margin: 20px;
+}
+.title-truong{
+    text-align: center;
+    color:#2d64bc ;
+}
+.header-chinh-phai{
+    display: flex;  
+    list-style-type: none;  
+}
+.header-chinh-phai li{
+    margin: 0 10px;     
+    padding: 6px;        
+    cursor: pointer;  
+
+}
+
+  
+.header-chinh-phai li a {
+    color: black;             
+    text-decoration: none;    
+}
+.header-chinh-phai li:hover{
+    background-color:gainsboro;  
+    transition: background-color 0.8s ease;   
+}
+.menu-chinh{
+    position: relative;
+}
+.menu-chinh .menu-con{ 
+    display: none;      
+    position: absolute;  
+    background-color:aliceblue;
+    list-style: none;  
+    padding: 0;      
+    top: 100%;         
+    white-space: nowrap;    
+}
+.menu-chinh:hover .menu-con{
+    display: block;      
+}
+
+/* BODY */
+.title-bangvang{
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+section#lich-su {
+    background-color:#ddd;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+section#lich-su img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;  
+}
+section#lich-su h2 {
+    color: #003366;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 5px;
+}
+section#lich-su h3 {
+    color: #003366;
+}
+#lich-su .container {
+    overflow: hidden;  
+    position: relative;
+}
+#lich-su {
+    font-size: 18px;  
+}
+#lich-su h2 {
+    font-size: 24px; 
+}
+#lich-su h3 {
+    font-size: 20px;  
+}
+#lich-su p {
+    font-size: 16px;  
+}
+
+/* BẢNG VÀNG */
+.bang-vang-thanh-tich {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    overflow: hidden;  
+}
+.slider {
+    position: relative;  
+    overflow: hidden;        
+    width: 100%;           
+    display: flex;
+    justify-content: center; 
+    background-color:#ddd;  
+    border-radius: 15px;  
+}
+.slider-wrapper {
+    display: flex;  
+    transition: transform 0.5s ease;    
+    width: calc(100% / 3 * 6);       
+}
+.slide {
+    flex: 0 0 calc(100%/3);     
+    text-align: center;        
+}
+.slide img {
+    margin-top: 40px;
+    width: 40%;  
+    height: auto;  
+}
+.slide p {
+    margin: 5px 0;  
+    padding: 0; 
+}
+
+/* FOOTER */
+.footer{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;      /*kc chữ với các biên*/
+    display: flex;
+    justify-content: space-between;
+}
+.noidung-footer a{
+    color:royalblue;
+}   
+.lienket {
+    text-align: center;  
+}
+.tieu-de {
+    margin-top: 19px;
+    margin-bottom: 10px; 
+}
+.lienket-mxh {
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+}
+.lienket-mxh a {
+    margin-right: 15px;      
+    text-decoration: none;  
+}
+.lienket-mxh img {
+    width: 35px;   
+    height: auto;    
+    transition: transform 0.3s, filter 0.3s;  
+}
+
+  /* BACK TO TOP */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;  
+    width: 50px;
+    height: 50px;
+    background-color:cadetblue;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;  
+}

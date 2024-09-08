@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu chung | Trường THPT Mở TPHCM</title>
+    <link rel="stylesheet" href="/minh/css/style.css">
+    <link rel="stylesheet" href="/minh/css/mobile.css" media =" screen and (max-width: 500px)" >
+    <link rel="icon" href="/minh/images/logoohc.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        wow = new WOW(
+                 {
+                 boxClass:     'wow',      // default
+                 animateClass: 'animate__animated', // default
+                 offset:       0,          // default
+                 mobile:       true,       // default
+                 live:         true        // default
+               }
+               )
+               wow.init();
+   </script>
+
+</head>
+<body>
+    <header>
+        <div class="header-phu">
+            <ul class="menu-header-phu">
+                <a href="#" style="cursor: not-allowed;"><li>Đăng nhập</a></li>
+                <a href="/minh/html/lien-he.html"><li>Liên hệ</a></li>
+                <li id="search-input-container"><input type="text" placeholder="Tìm kiếm" id="search-input"></li>
+                <li><i style="cursor: not-allowed;" class="fa-solid fa-magnifying-glass" id="search-icon"></i></li> 
+            </ul>
+        </div>
+        <div class="header-chinh">
+            <ul class="header-chinh-trai">
+                <li>
+                    <a href="#">
+                        <img src="/minh/images/logoohc.png" alt="logo">
+                    </a>
+                </li>
+                <li class="title-truong">
+                    <h3>TRUNG HỌC PHỔ THÔNG</h3>
+                    <h2>MỞ THÀNH PHỐ HỒ CHÍ MINH</h2>
+                </li>
+            </ul>
+            <div id="hamburger-menu">
+                <span>&#9776;</span>
+            </div>
+            <ul class="header-chinh-phai">
+                <li><a href="/Thành/index.html">Trang chủ</a></li>
+                <a href="#"><li class="menu-chinh">Giới thiệu</a>
+                    <ul class="menu-con">
+                        <a href="/minh/html/gioi-thieu.html"><li>Giới thiệu chung</li></a>
+                        <a href="/Thành/lich-su-phat-trien.html"><li>Lịch sử phát triển</li></a>
+                        <a href="bangiamhieu.html"><li>Ban giám hiệu</li></a>
+                    </ul>
+                </li>
+                <a href="/minh/html/thong-tin-tuyen-sinh.html"><li class="menu-chinh">Tuyển sinh</a>
+                    <ul class="menu-con">
+                        <a href="/minh/html/thong-tin-tuyen-sinh.html#mocThoiGian"><li>Mốc thời gian</li></a>
+                        <a href="/minh/html/thong-tin-tuyen-sinh.html#hocPhi"><li>Học phí, học bổng, hổ trợ</li></a>
+                        <a href="/minh/html/thong-tin-tuyen-sinh.html#thongTin"><li>Nhận thông tin</li></a>
+                        <a href="/minh/html/thong-tin-tuyen-sinh.html#doiNgu"><li>Đội ngũ tuyển sinh</li></a>
+                    </ul>
+                </li>
+                <a href="/minh/html/hoat-dong-ngoai-khoa.html"><li class="menu-chinh">Hoạt động</a>
+                    <ul class="menu-con">
+                        <a href="/minh/html/hoat-dong-ngoai-khoa.html#lich"><li>Lịch hoạt động</li></a>
+                        <a href="/minh/html/hoat-dong-ngoai-khoa.html#hoatDong"><li>Câu lạc bộ, đội nhóm</li></a>
+                        <a href="/minh/html/hoat-dong-ngoai-khoa.html#hoatDong"><li>Thể thao, văn nghệ</li></a>
+                        <a href="/minh/html/hoat-dong-ngoai-khoa.html#hoatDong"><li>chương trình tình nguyện</li></a>
+
+                    </ul>
+                </li>
+                <a href="/minh/html/goc-phu-huynh.html"><li class="menu-chinh">Phụ huynh</a></li>
+            </ul>
+        </div>
+    </header>   
+
+    <div class="pageBodyWrapper">
+        <div class="pageBody">
+            <main class="pageContent">
+                <h1 >
+                    Giới thiệu chung
+                </h1>
+
+                <section class="element">
+                    <div class="introHeader animate__animated animate__bounce wow animate__tada" >
+                        <span class="header contentElement">
+                            Chào mừng đến với Trường THPT Mở TP HCM
+                        </span>
+                    </div>
+                </section>
+               
+                <section class="element">
+
+                    <div class="photoAlbum ">
+                        <div class="mainPhoto animate__animated animate__bounce wow animate__backInDown">
+                            <img id="mainImage" src="/minh/images/img1.jpg" alt="Ảnh chính">
+                        </div>
+                        <div class="thumbnailContainer">
+                            <img class="thumbnail animate__animated animate__bounce wow animate__fadeInLeftBig" src="/minh/images/activities.jpg" alt="Ảnh phụ 1" onclick="changeMainPhoto('/minh/images/activities.jpg')">
+                            <img class="thumbnail animate__animated animate__bounce wow animate__fadeInUpBig" src="/minh/images/addmissionImage.jpg" alt="Ảnh phụ 2" onclick="changeMainPhoto('/minh/images/addmissionImage.jpg')">
+                            <img class="thumbnail animate__animated animate__bounce wow animate__fadeInDown" src="/minh/images/phu_huynh.jpg" alt="Ảnh phụ 3" onclick="changeMainPhoto('/minh/images/phu_huynh.jpg')">
+                            <img class="thumbnail animate__animated animate__bounce wow animate__fadeInUpBig" src="/minh/images/1.jpeg" alt="Ảnh phụ 4" onclick="changeMainPhoto('/minh/images/1.jpeg')">
+                            <img class="thumbnail animate__animated animate__bounce wow animate__fadeInRightBig" src="/minh/images/img1.jpg" alt="Ảnh phụ 5" onclick="changeMainPhoto('/minh/images/img1.jpg')">
+                        </div>
+                    </div>
+
+                    <script>
+                        function changeMainPhoto(photoSrc) {
+                            document.getElementById('mainImage').src = photoSrc;
+                        }
+                    </script>
+
+                </section>
+                
+                <section class="element" id="suMang">
+                    <div class="boxRed introHeader animate__animated animate__bounce wow animate__flipInY">
+                        <div class="boxContent">
+                            <span class="boxTitle">
+                                    SỨ MẠNG
+                            </span>
+                            <p  class="boxText">
+                                    Trường THPT Mở thành phố Hồ Chí Minh thực hiện giáo dục mở, tạo bình đẳng cho mọi người trong tiếp cận giáo dục đại học, góp phần xây dựng xã hội học tập, nâng cao tri thức và năng lực nghề nghiệp cho người học bằng các phương thức linh hoạt, thuận tiện và hiệu quả.
+                            </p>
+                        </div>  
+                        
+
+                    </div>
+                    
+                </section>
+
+                <section class="element">
+                    <div class="twoColumnLayout">
+                        <div class="column-1 animate__animated animate__bounce wow animate__fadeInLeft">
+                            <p class="contentElement">
+                            Chúng tôi cam kết hiểu rõ từng học sinh, hỗ trợ phát triển xã hội và cảm xúc, và giúp các em trở thành những người trẻ đam mê, gắn bó với trường học và với nhau suốt đời.
+                                <br><br>Học sinh của chúng tôi sẽ có nhiều cơ hội phát triển trong suốt ba năm học tại Trường THPT Mở thành phố Hồ Chí Minh. Một phần quan trọng của sự phát triển này đến từ việc khám phá giá trị, kỹ năng và thế mạnh của bản thân trong môi trường học tập đa dạng, nơi các em có thể học hỏi từ những quan điểm độc đáo của nhau.
+                                <br><br>Môi trường của chúng tôi giúp các em học hỏi, giải quyết vấn đề, ăn mừng, cạnh tranh và phát triển cùng nhau. Các em có thể trải nghiệm những niềm vui trong cuộc sống và hỗ trợ lẫn nhau trong suốt những năm trung học và cả sau này. Đó là lý do mà học sinh và cựu học sinh của chúng tôi thường nói... <em>Giáo dục mở - Sáng tạo không ngừng!</em>
+                            </p>
+                        </div>
+                        <div class="column-2 animate__animated animate__bounce wow animate__fadeInRight">
+                           <img  src="/minh/images/1.jpeg" alt="images"/>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="element" id="tamNhin">
+                    <div class="boxRed animate__animated animate__bounce wow animate__flipInY">
+                        <div class="boxContent">
+                            <span class="boxTitle">
+                                    TẦM NHÌN
+                            </span>
+                            <p class="boxText">
+                                   Trường THPT Mở thành phố Hồ Chí Minh phấn đấu trở thành Đại học thực hiện giáo dục mở, định hướng ứng dụng với chất lượng cao.                               
+                            </p>
+                        </div>                       
+                    </div>
+                </section>
+               
+                <section class="element">
+                            <p class="contentElement">
+                            Được thành lập vào năm 1990, đến nay Trường THPT Mở Thành phố Hồ Chí Minh là trường đại học đa ngành trực thuộc Bộ Giáo dục và Đào tạo, có nhiệm vụ đào tạo với các hình thức đào tạo chính quy và giáo dục thường xuyên, đào tạo các điểm vệ tinh,…nhằm đáp ứng nhu cầu học tập đa dạng của xã hội, góp phần tăng cường đội ngũ cán bộ khoa học-kỹ thuật cho đất nước.
+                           <br><br>
+                                Trường hướng đến việc cung cấp các chương trình đào tạo tiên tiến, nghiên cứu ứng dụng, và góp phần vào sự phát triển xã hội và kinh tế của đất nước thông qua việc nâng cao chất lượng giáo dục và đổi mới sáng tạo.
+                            <br><br>
+Trường cũng nhấn mạnh vào việc xây dựng một môi trường học tập mở, thân thiện và linh hoạt, giúp sinh viên phát triển toàn diện cả về kiến thức lẫn kỹ năng, chuẩn bị tốt cho môi trường làm việc toàn cầu.
+                            </p>                      
+                </section>
+
+                <section class="element" id="gtcl">
+                    <div class="twoColumnLayout borderBot effect animate__animated animate__bounce wow animate__fadeInDown">
+                        <span class="boxTitle">  GIÁ TRỊ CỐT LÕI
+                        </span>
+                    </div>
+                    <div class="twoColumnLayout borderBot effect animate__animated animate__bounce wow animate__lightSpeedInRight">
+                        <span class="column-1-25">
+                            <img width="100%" src="/minh/images/social.png" alt="Phục vụ cộng đồng image">
+                        </span>
+                        <span class="column-2-75 contentElement">
+                            <p class="center">                             PHỤC VỤ CỘNG ĐỒNG
+                            </p> <br>Nhà Trường hướng đến phục vụ lợi ích cộng đồng trong đào tạo, nghiên cứu và các hoạt động khác.
+                        </span>
+                    </div>
+                    <div class="twoColumnLayout borderBot effect animate__animated animate__bounce wow animate__lightSpeedInLeft">
+                        <span class="column-2-75 contentElement">
+                            <p class="center right">                            GẮN KẾT THỰC TIỄN
+                            </p> <br>Nhà trường thúc đẩy việc giảng dạy và nghiên cứu đáp ứng các yêu cầu thực tiễn nhằm nâng cao tri thức và năng lực nghế nghiệp cho người học.
+                        </span>
+                        <span class="column-1-25">
+                            <img width="100%" src="/minh/images/link.png" alt="Gắn kết thực tiễn image">
+                        </span>
+                        
+                    </div>
+                    <div class="twoColumnLayout borderBot effect animate__animated animate__bounce wow animate__lightSpeedInRight">
+                        
+                        <span class="column-1-25">
+                            <img width="100%" src="/minh/images/improvement.png" alt="Nâng cao tri thức image">
+                        </span>
+                        <span class="column-2-75 contentElement">
+                            <p class="center">NÂNG CAO TRI THỨC VÀ NĂNG LỰC NGHỀ NGHIỆP
+                            </p> <br>Cung cấp cơ hội học tập suốt đời và bình đẳng cho mọi người.
+                            <br> Đáp ứng yêu cầu ngày càng cao của xã hội về chất lượng đào tạo và nghiên cứu khoa học.
+                            <br> Chú trọng tiếp cận và ứng dụng tri thức và khoa học công nghệ mới trên thế giới, hướng đến hội nhập quốc tế. Thích ứng nhanh chóng với sự thay đổi.
+                        </span>
+                    </div>
+                    <div class="twoColumnLayout borderBot effect animate__animated animate__bounce wow animate__lightSpeedInLeft">
+                        <span class="column-2-75 contentElement">
+                            <p class="center right">                  CHUYÊN NGHIỆP, SÁNG TẠO VÀ HIỆU QUẢ
+                            </p> <br>Phát triển đội ngũ có trách nhiệm, năng động, sáng tạo và chuyên nghiệp có khả năng thực hiện nhiệm vụ đào tạo, nghiên cứu và các hoạt động cộng đồng với hiệu quả cao nhất.
+                           <br> Khuyến khích tư duy sáng tạo với tinh thần đổi mới cách nghĩ, cách làm, biến thách thức thành cơ hội.
+                           <br> Tạo lập và duy trì môi trường làm việc. giảng dạy và học tập thân thiện với thái độ hợp tác, tôn trọng lẫn nhau để cùng đạt mục tiêu.
+                        </span>
+                        <span class="column-1-25">
+                            <img width="100%" src="/minh/images/crea.png" alt="Sáng tạo và hiệu quả image">
+                        </span>
+                        
+                    </div>
+                </section>
+
+                <section class="element" id="khac">
+                    <div class="twoColumnLayout">
+                        <div class="column-1  ">
+                            <div class="twoColumnLayout effect animate__animated animate__bounce wow animate__fadeInRight">
+                            <span class="column-1-25">
+                                <img width="100px" src="/minh/images/position.png" alt="icon">
+                            </span>
+                            <span class="column-2-75 contentElement">
+                                <p class="center">Tên trường</p> Tiếng Việt: Trường THPT Mở Thành Phố Hồ Chí Minh<br> Tiếng Anh: Ho Chi Minh City Open High School<br> 
+                            </span>
+                            </div>
+                            <div class="twoColumnLayout effect animate__animated animate__bounce wow animate__fadeInDown">
+                            <span class="column-1-25">
+                                <img width="100px" src="/minh/images/position.png" alt="icon">
+                            </span>
+                            <span class="column-2-75 contentElement">
+                                <p class="center">Tên viết tắt của trường</p> Tiếng Việt: Trường THPT Mở Tp. Hồ Chí Minh<br> Tiếng Anh: HCMCOHC
+                            </span>
+                            </div>
+                            
+                        </div>
+                        <div class="column-2">   
+                            <div class="twoColumnLayout effect animate__animated animate__bounce wow animate__fadeInUp">
+                                <span class="column-1-25">
+                                    <img width="100px" src="/minh/images/position.png" alt="icon">
+                                </span>
+                                <span class="column-2-75 contentElement">
+                                    <p class="center">Cơ quan/Bộ chủ quản</p> Trường THPT Mở TP. Hồ Chí Minh trực thuộc Bộ giáo dục và Đào tạo
+                                <br><br>
+                                </span>
+                                </div>
+                                <div class="twoColumnLayout effect animate__animated animate__bounce wow animate__fadeInLeft">
+                                <span class="column-1-25">
+                                    <img width="100px" src="/minh/images/position.png" alt="icon">
+                                </span>
+                                <span class="column-2-75 contentElement">
+                                    <p class="center">Địa chỉ liên lạc
+                                    </p> Khu dân cư Nhơn Đức, Nhà Bè, Hồ Chí Minh<br> FAX: (028) 1234 1234 <br> Email: <a href="#">ohc@gmail.com</a>  <br> Website: <a href="#">ohc.edu.vn</a>
+                                </span>
+                                </div>                        
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <img src="/minh/images/botchat.png" alt="Chat Icon" id="openChatBTN" class="chatIcon">
+
+                    <!-- Chatbox dưới dạng overlay -->
+                    <div class="chatOverlay" id="chatOverlay">
+                        <div class="chatContainer">
+                            <div class="chatHeader">
+                                <span>Trò chuyện với BotChat</span>
+                                <button class="closeBTN" id="closeChatBTN"><i class="fas fa-times"></i></button>
+                            </div>
+                            <div class="chatBox" id="chatBox"></div>
+                            <div class="chatInputContainer">
+                                <input type="text" id="userInput" placeholder="Nhập tin nhắn ở đây...">
+                                <button class="sendBTN" onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+                            </div>
+                            <div class="suggestions" id="suggestions">
+                                <!-- Dòng gợi ý sẽ được tạo động ở đây -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <button id="goToTopBtn" class="go-to-top">TOP</button>
+                
+            </main>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="noidung-footer">
+            <p><strong>Trường Trung Học Phổ Thông Mở Thành Phố Hồ Chí Minh</strong></p>
+            <p>Địa chỉ: Khu dân cư Nhơn Đức, Nhà Bè, Hồ Chí Minh</p>
+            <p>Điện thoại: (028) 1234 1234</p>
+            <p>Email: ohc@gmail.com</p>
+            <a href="#">Điều khoản sử dụng</a> | <a href="#">Chính sách bảo mật</a>
+        </div>
+        <div class="lichtrinh">
+            <p><strong>Lịch trình:</strong></p>
+            <p>7:00 sáng: Lớp học bắt đầu</p>
+            <p>11:30 sáng: kết thúc ca sáng</p>
+            <p>1:30 chiều: Lớp học bắt đầu</p>
+            <p>4:30 chiều: kết thúc ca chiều</p>
+        </div>
+        <div class="lienket">
+            <h4 class="tieu-de">Liên kết mạng xã hội:</h4>
+            <div class="lienket-mxh">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/800px-Facebook_Logo_%282019%29.png" alt="Facebook">
+                </a>
+                <a href="https://www.youtube.com" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt="YouTube">
+                </a>
+                <a href="https://www.tiktok.com" target="_blank">
+                    <img src="https://static.vecteezy.com/system/resources/previews/016/716/450/non_2x/tiktok-icon-free-png.png" alt="TikTok">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="/minh/js/btn.js"></script>
+    <script src="/minh/js/bot.js"></script>
+    <script src="/minh/js/menu.js"></script>
+</body>
+</html>

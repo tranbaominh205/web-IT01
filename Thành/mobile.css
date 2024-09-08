@@ -1,0 +1,141 @@
+/* Responsive for screens smaller than 500px */
+@media (max-width: 500px) {
+
+    /*header*/
+
+
+    .menu-header-phu{
+        color: white;
+        padding: 20px;
+    }
+    .header-phu{
+        border-radius:10px 10px 0 0 !important; 
+    
+    }
+    
+    .menu-con {
+        z-index: 1000;
+        position: relative;
+    }
+    .header-chinh{
+        background-color: #012a53 !important;
+        margin-bottom: 20px;
+        border-radius: 0 0 10px 10px;    }
+    .header-chinh-phai {
+        display: none !important; /* Ẩn menu chính khi màn hình nhỏ */
+    }
+    .title-truong
+    {
+        color: #2d64bc;
+    }
+    
+    #hamburger-menu {
+        background-color: #a20023;
+        padding: 8px !important;
+        border-radius: 12px  0  0 12px;
+        display: block ; /* Hiển thị biểu tượng 3 vạch khi màn hình nhỏ */
+        right: 8px;
+    }
+    .header-chinh-phai > li >a {
+        color: white !important;
+     }
+    
+    
+    .header-chinh-phai.active {
+        display: flex !important;  /* Hiển thị lại menu khi click vào hamburger */
+        flex-direction: column; /* Sắp xếp các mục theo chiều dọc */
+        background-color: #a20023 !important ; /* Màu nền menu */
+        position: absolute; /* Cho menu nổi trên cùng */
+        top: 126px ; /* Căn chỉnh dưới header */
+        right: 0;
+        width: 100%; /* Chiếm toàn bộ chiều ngang */
+        z-index: 1000;
+    }
+    
+    
+    /* HEADER PHỤ */
+    .header-phu {
+        height: auto; /* Để phần header tự điều chỉnh chiều cao */
+    }
+    .menu-header-phu {
+        padding-top: 5px;
+        align-items: flex-start; /* Căn chỉnh về phía trái */
+    }
+    .menu-header-phu li {
+        padding: 6px 0; /* Điều chỉnh khoảng cách giữa các mục */
+        text-align: left;
+    }
+    
+    /* HEADER CHÍNH */
+    .header-chinh {
+        text-align: center; /* Căn giữa nội dung */
+    }
+    .header-chinh-trai, .header-chinh-phai {
+        flex-direction: column; /* Sắp xếp các mục theo chiều dọc */
+        align-items: center;
+    }
+    .header-chinh-trai img {
+        height: 80px; /* Giảm kích thước logo */
+    }
+    .header-chinh-phai li {
+        margin: 6px 0; /* Điều chỉnh khoảng cách giữa các mục */
+    }
+
+.tintuc {
+    overflow: auto; /* Thêm thanh cuộn nếu nội dung quá dài */
+    height: auto; /* Đảm bảo chiều cao tự động điều chỉnh */
+}
+
+.tintuc .nhieu-tintuc-con {
+    flex-direction: column; /* Sắp xếp các mục theo chiều dọc */
+    gap: 1rem; /* Thêm khoảng cách giữa các ô */
+}
+
+.tintuc .tintuc-con {
+    flex: 1 1 auto; /* Cho phép các ô co giãn linh hoạt */
+    max-width: 100%; /* Đảm bảo không vượt quá chiều rộng của container */
+    margin-bottom: 1rem; /* Thêm khoảng cách giữa các ô */
+}
+
+    /* FOOTER */
+    .footer {
+        flex-direction: column; /* Sắp xếp các mục footer theo cột */
+        text-align: center; /* Căn giữa nội dung */
+    }
+    .footer div {
+        margin-bottom: 10px; /* Tạo khoảng cách giữa các mục */
+    }
+
+    /* Nút BACK TO TOP */
+    #back-to-top {
+        width: 40px;
+        height: 40px;
+        font-size: 18px; /* Giảm kích thước nút */
+    }
+
+    .lich-su img{
+        width: 100% !important;
+    }
+ /*Ban giam hieu*/
+ .thanh-vien-container {
+    width: 95%;
+}
+
+.thanh-vien {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.thanh-vien img {
+    max-width: 100px;
+}
+
+.thong-tin {
+    text-align: center;
+    max-width: 100%;
+}
+
+
+    
+}
